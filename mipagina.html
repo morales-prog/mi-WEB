@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Primera Web</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #0077b6;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00b4d8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="mensaje">¡Hola, bienvenido a mi primera web!</h1>
+  <button onclick="cambiarMensaje()">Haz clic aquí</button>
+
+  <script>
+    function cambiarMensaje() {
+      document.getElementById("mensaje").textContent = "¡Gracias por visitar!";
+    }
+  </script>
+</body>
+</html>
